@@ -1,7 +1,14 @@
 .btn {
     .fa {
       font-weight: bold;
-      margin-left: 15px;
+
+      &.left {
+        margin-right: 10px;
+      }
+
+      &.right {
+        margin-left: 10px;
+      }
     }
   }
 

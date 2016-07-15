@@ -27,8 +27,11 @@ pre {
   margin: 15px 0 30px; }
 
 .p--default .btn .fa {
-  font-weight: bold;
-  margin-left: 15px; }
+  font-weight: bold; }
+  .p--default .btn .fa.left {
+    margin-right: 10px; }
+  .p--default .btn .fa.right {
+    margin-left: 10px; }
 
 .p--default .btn-primary {
   background-color: #0592d0;
@@ -50,12 +53,26 @@ pre {
 .p--default .c-card__heading {
   color: #0592d0;
   font-family: 'NationalRegular';
-  font-size: 20px; }
+  font-size: 20px;
+  margin-bottom: 0; }
+
+.p--default .c-card__sub-heading {
+  color: #a8a8a8;
+  font-family: 'NationalBook';
+  font-size: 16px; }
 
 .p--default .c-card__body {
   color: #4e4e4e;
   font-family: 'NationalBook';
   font-size: 16px; }
+
+.p--default .c-card__comment {
+  border-top: 1px solid #e9ebee;
+  margin-top: 12px;
+  padding-top: 12px; }
+  .p--default .c-card__comment > .btn {
+    color: #4e4e4e;
+    padding: 0; }
 
 .p--default .nav-tabs {
   border: 0; }
