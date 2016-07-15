@@ -1,3 +1,15 @@
-body {
-  margin: 1px;
-  background-color: #bada55; }
+pre {
+  margin: 15px 0 30px; }
+
+.btn .fa {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px; }
+
+.btn-primary {
+  background-color: #0592d0;
+  border-color: #0592d0;
+  font-size: 18px;
+  min-width: 105px;
+  padding: 8px 12px;
+  text-transform: uppercase; }

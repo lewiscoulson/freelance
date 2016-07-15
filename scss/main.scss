@@ -1,5 +1,22 @@
-$badass: #bada55;
-body { 
-  margin: 1px; 
-  background-color: $badass; 
+$blue-primary: #0592d0;
+
+pre {
+  margin: 15px 0 30px;
+}
+
+.btn {
+  .fa {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+}
+
+.btn-primary {
+  background-color: $blue-primary;
+  border-color: $blue-primary;
+  font-size: 18px;
+  min-width: 105px;
+  padding: 8px 12px;
+  text-transform: uppercase;
 }
