@@ -1,0 +1,42 @@
+.nav-tabs {
+  border: 0;
+}
+
+.nav-tabs > li {
+  > a {
+    background: $grey-dark;
+    border: 0;
+    color: $grey-darker;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 8px 20px 7px;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+       border: 0;
+    }
+
+    @include from(tablet) {
+      min-width: 160px;
+    }
+  }
+
+  &.active {
+    > a {
+      background: $white;
+    }
+  }
+
+  &.no-bg {
+    > a {
+      background: none;
+      color: $blue-primary;
+    }
+  }
+}
+
+.tab-content {
+  background: $white;
+  padding: 10px;
+}

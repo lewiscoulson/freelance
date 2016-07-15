@@ -1,11 +1,18 @@
-body {
-  background: #e9ebee; }
+@font-face {
+  font-family: 'NationalMedium';
+  src: url("../fonts/NationalMedium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/NationalMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalMedium.woff2") format("woff2"), url("../fonts/NationalMedium.woff") format("woff"), url("../fonts/NationalMedium.ttf") format("truetype"), url("../fonts/NationalMedium.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
 
-.p--default pre {
+body {
+  background: #e9ebee;
+  font-family: NationalMedium; }
+
+pre {
   margin: 15px 0 30px; }
 
 .p--default .btn .fa {
-  font-size: 20px;
   font-weight: bold;
   margin-left: 15px; }
 
@@ -16,6 +23,15 @@ body {
   min-width: 105px;
   padding: 8px 12px;
   text-transform: uppercase; }
+
+.p--default .btn-group .btn {
+  font-size: 16px;
+  text-transform: uppercase; }
+  .p--default .btn-group .btn.active {
+    background: #0592d0;
+    border-color: #0592d0;
+    box-shadow: none;
+    color: #fff; }
 
 .p--default .nav-tabs {
   border: 0; }

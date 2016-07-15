@@ -1,0 +1,24 @@
+@mixin upto($media) {
+  $max-width-bp: (map-get($bps, $media) or $media) - 1;
+
+  @media only screen and (max-width: $max-width-bp) {
+    @content;
+  }
+}
+
+@mixin from($media) {
+  $min-width-bp: (map-get($bps, $media) or $media);
+
+  @media only screen and (min-width: $min-width-bp) {
+    @content;
+  }
+}
+
+@mixin between($media1, $media2) {
+  $min-width-bp: (map-get($bps, $media1) or $media1);
+  $max-width-bp: (map-get($bps, $media2) or $media2) - 1;
+
+  @media only screen and (min-width: $min-width-bp) and (max-width: $max-width-bp) {
+    @content;
+  }
+}

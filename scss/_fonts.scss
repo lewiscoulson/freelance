@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'NationalMedium';
+  src: url('../fonts/NationalMedium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/NationalMedium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/NationalMedium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/NationalMedium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/NationalMedium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/NationalMedium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
