@@ -5,6 +5,20 @@
   src: url("../fonts/NationalMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalMedium.woff2") format("woff2"), url("../fonts/NationalMedium.woff") format("woff"), url("../fonts/NationalMedium.ttf") format("truetype"), url("../fonts/NationalMedium.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
+@font-face {
+  font-family: 'NationalRegular';
+  src: url("../fonts/NationalRegular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/NationalRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalRegular.woff2") format("woff2"), url("../fonts/NationalRegular.woff") format("woff"), url("../fonts/NationalRegular.ttf") format("truetype"), url("../fonts/NationalRegular.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'NationalBook';
+  src: url("../fonts/NationalBook.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/NationalBook.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalBook.woff2") format("woff2"), url("../fonts/NationalBook.woff") format("woff"), url("../fonts/NationalBook.ttf") format("truetype"), url("../fonts/NationalBook.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
 body {
   background: #e9ebee;
   font-family: NationalMedium; }
@@ -32,6 +46,16 @@ pre {
     border-color: #0592d0;
     box-shadow: none;
     color: #fff; }
+
+.p--default .c-card__heading {
+  color: #0592d0;
+  font-family: 'NationalRegular';
+  font-size: 20px; }
+
+.p--default .c-card__body {
+  color: #4e4e4e;
+  font-family: 'NationalBook';
+  font-size: 16px; }
 
 .p--default .nav-tabs {
   border: 0; }

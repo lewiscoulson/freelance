@@ -1,0 +1,13 @@
+.c-card {
+  &__heading {
+    color: $blue-primary;
+    font-family: 'NationalRegular';
+    font-size: 20px;
+  }
+
+  &__body {
+    color: $grey-darker;
+    font-family: 'NationalBook';
+    font-size: 16px;
+  }
+}

@@ -7,3 +7,23 @@
        url('../fonts/NationalMedium.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/NationalMedium.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+@font-face {
+  font-family: 'NationalRegular';
+  src: url('../fonts/NationalRegular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/NationalRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/NationalRegular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/NationalRegular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/NationalRegular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/NationalRegular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'NationalBook';
+  src: url('../fonts/NationalBook.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/NationalBook.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/NationalBook.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/NationalBook.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/NationalBook.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/NationalBook.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
