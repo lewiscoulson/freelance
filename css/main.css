@@ -1,15 +1,46 @@
-pre {
+body {
+  background: #e9ebee; }
+
+.p--default pre {
   margin: 15px 0 30px; }
 
-.btn .fa {
+.p--default .btn .fa {
   font-size: 20px;
   font-weight: bold;
   margin-left: 15px; }
 
-.btn-primary {
+.p--default .btn-primary {
   background-color: #0592d0;
   border-color: #0592d0;
   font-size: 18px;
   min-width: 105px;
   padding: 8px 12px;
   text-transform: uppercase; }
+
+.p--default .nav-tabs {
+  border: 0; }
+
+.p--default .nav-tabs > li > a {
+  background: #959595;
+  border: 0;
+  color: #3c3f41;
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 8px 20px 7px;
+  text-transform: uppercase; }
+  .p--default .nav-tabs > li > a:hover, .p--default .nav-tabs > li > a:focus {
+    border: 0; }
+  @media only screen and (min-width: 600px) {
+    .p--default .nav-tabs > li > a {
+      min-width: 160px; } }
+
+.p--default .nav-tabs > li.active > a {
+  background: #fff; }
+
+.p--default .nav-tabs > li.no-bg > a {
+  background: none;
+  color: #0592d0; }
+
+.p--default .tab-content {
+  background: #fff;
+  padding: 10px; }

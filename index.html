@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container p--default">
     <h1>Components</h1>
     <div class="row">
       <div class="col-md-12">
@@ -26,6 +26,21 @@
 <pre>
 &lt;a href="" class="btn btn-primary"&gt;Post&lt;/a&gt;
 </pre>
+        <h2>Tabs</h2>
+
+        <div>
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#new" aria-controls="new" role="tab" data-toggle="tab">New</a></li>
+            <li role="presentation"><a  href="#featured" aria-controls="featured" role="tab" data-toggle="tab">Featured</a></li>
+            <li role="presentation" class="no-bg"><a  href="#view-all" aria-controls="view-all" role="tab" data-toggle="tab">View all</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="new">new</div>
+            <div role="tabpanel" class="tab-pane" id="featured">featured</div>
+            <div role="tabpanel" class="tab-pane" id="view-all">view all</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

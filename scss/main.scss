@@ -1,22 +1,119 @@
 $blue-primary: #0592d0;
 
-pre {
-  margin: 15px 0 30px;
-}
+$grey-darker: #3c3f41;
+$grey-dark: #959595;
+$grey-medium: #e9ebee;
 
-.btn {
-  .fa {
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 15px;
+$white: #fff;
+
+
+// Breakpoints
+$bp-mobile: 320px;
+$bp-tablet: 600px;
+$bp-desktop: 1000px;
+
+$bps: (
+  'mobile': $bp-mobile,
+  'tablet': $bp-tablet,
+  'desktop': $bp-desktop
+);
+
+
+@mixin upto($media) {
+  $max-width-bp: (map-get($bps, $media) or $media) - 1;
+
+  @media only screen and (max-width: $max-width-bp) {
+    @content;
   }
 }
 
-.btn-primary {
-  background-color: $blue-primary;
-  border-color: $blue-primary;
-  font-size: 18px;
-  min-width: 105px;
-  padding: 8px 12px;
-  text-transform: uppercase;
+@mixin from($media) {
+  $min-width-bp: (map-get($bps, $media) or $media);
+
+  @media only screen and (min-width: $min-width-bp) {
+    @content;
+  }
+}
+
+@mixin between($media1, $media2) {
+  $min-width-bp: (map-get($bps, $media1) or $media1);
+  $max-width-bp: (map-get($bps, $media2) or $media2) - 1;
+
+  @media only screen and (min-width: $min-width-bp) and (max-width: $max-width-bp) {
+    @content;
+  }
+}
+
+
+body {
+  background: $grey-medium;
+}
+
+.p--default {
+  pre {
+    margin: 15px 0 30px;
+  }
+
+  .btn {
+    .fa {
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 15px;
+    }
+  }
+
+  .btn-primary {
+    background-color: $blue-primary;
+    border-color: $blue-primary;
+    font-size: 18px;
+    min-width: 105px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+  }
+
+  .nav-tabs {
+    border: 0;
+  }
+
+  .nav-tabs > li {
+    > a {
+      background: $grey-dark;
+      border: 0;
+      color: $grey-darker;
+      font-size: 18px;
+      margin-right: 10px;
+      padding: 8px 20px 7px;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus {
+         border: 0;
+      }
+
+      @include from(tablet) {
+        min-width: 160px;
+      }
+    }
+
+    &.active {
+      > a {
+        background: $white;
+      }
+    }
+
+    &.no-bg {
+      > a {
+        background: none;
+        color: $blue-primary;
+      }
+    }
+  }
+
+  .tab-content {
+    background: $white;
+    padding: 10px;
+  }
+
+
+
 }
