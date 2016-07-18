@@ -1,4 +1,6 @@
 .c-card {
+  position: relative;
+
   &__heading {
     color: $blue-primary;
     font-family: 'NationalRegular';
@@ -20,12 +22,27 @@
 
   &__comment {
     border-top: 1px solid $grey-medium;
+    font-family: 'NationalBook';
+    font-size: 16px;
     margin-top: 12px;
     padding-top: 12px;
 
     > .btn {
       color: $grey-darker;
       padding: 0;
+
+      i {
+        color: $grey-dark;
+      }
     }
+  }
+
+  &__time {
+    color: $grey-light;
+    font-family: 'NationalRegular';
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 }
