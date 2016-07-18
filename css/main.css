@@ -33,6 +33,9 @@ body {
 pre {
   margin: 15px 0 30px; }
 
+.p--default .c-branding {
+  max-width: 100%; }
+
 .p--default .btn .fa {
   font-weight: bold; }
   .p--default .btn .fa.left {
@@ -119,6 +122,10 @@ pre {
     position: absolute;
     right: 10px;
     top: 10px; }
+  .p--default .c-card__more-info {
+    color: #959595;
+    font-size: 22px;
+    margin: 10px 10px 0; }
   .p--default .c-card textarea {
     background: #f2f2f2;
     border: 1px solid #d6dbe1;
@@ -155,8 +162,9 @@ pre {
   text-align: right; }
 
 .p--default .chart__item-label {
-  line-height: 30px;
+  line-height: 1;
   padding-left: 10px;
+  padding-top: 8px;
   text-transform: uppercase; }
 
 .p--default .chart__item-label {
@@ -184,6 +192,9 @@ pre {
     position: absolute;
     text-transform: uppercase; }
 
+.p--default .c-tabs {
+  max-width: 500px; }
+
 .p--default .nav-tabs {
   border: 0; }
 
@@ -199,7 +210,7 @@ pre {
     border: 0; }
   @media only screen and (min-width: 600px) {
     .p--default .nav-tabs > li > a {
-      min-width: 160px; } }
+      min-width: 140px; } }
 
 .p--default .nav-tabs > li.active > a {
   background: #fff; }
@@ -232,3 +243,17 @@ pre {
     .p--default .tags li a {
       color: #0592d0;
       text-transform: uppercase; }
+
+.p--default .tooltip-inner {
+  background: #163551;
+  border-radius: 0;
+  font-family: 'NationalRegular';
+  font-size: 16px;
+  max-width: 280px;
+  padding: 8px; }
+
+.p--default .tooltip.top .tooltip-arrow {
+  border-top-color: #163551; }
+
+.p--default .tooltip.in {
+  opacity: 1; }

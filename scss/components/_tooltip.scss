@@ -1,0 +1,16 @@
+.tooltip-inner {
+  background: $blue-dark;
+  border-radius: 0;
+  font-family: 'NationalRegular';
+  font-size: 16px;
+  max-width: 280px;
+  padding: 8px;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: $blue-dark;
+}
+
+.tooltip.in {
+  opacity: 1;
+}
