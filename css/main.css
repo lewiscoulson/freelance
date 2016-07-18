@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'NationalBold';
+  src: url("../fonts/NationalBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/NationalBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalBold.woff2") format("woff2"), url("../fonts/NationalBold.woff") format("woff"), url("../fonts/NationalBold.ttf") format("truetype"), url("../fonts/NationalBold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
   font-family: 'NationalMedium';
   src: url("../fonts/NationalMedium.eot");
   /* IE9 Compat Modes */
@@ -57,6 +64,12 @@ pre {
     font-family: 'NationalRegular';
     font-size: 20px;
     margin-bottom: 0; }
+  .p--default .c-card__heading--dark {
+    color: #3c3f41;
+    font-family: 'NationalBold';
+    font-size: 15px;
+    margin-top: 0;
+    text-transform: uppercase; }
   .p--default .c-card__sub-heading {
     color: #a8a8a8;
     font-family: 'NationalBook';
@@ -83,6 +96,12 @@ pre {
     position: absolute;
     right: 10px;
     top: 10px; }
+  .p--default .c-card textarea {
+    background: #f2f2f2;
+    border: 1px solid #d6dbe1;
+    margin-bottom: 15px;
+    resize: none;
+    text-transform: uppercase; }
 
 .p--default .nav-tabs {
   border: 0; }
