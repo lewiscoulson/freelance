@@ -103,6 +103,28 @@ pre {
     resize: none;
     text-transform: uppercase; }
 
+.p--default .statistic {
+  background: #c6e5f4;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  max-width: 150px;
+  min-height: 100px;
+  padding: 0 15px 15px;
+  position: relative; }
+  .p--default .statistic__heading {
+    display: block;
+    font-family: 'NationalBold';
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 7px;
+    text-transform: uppercase; }
+  .p--default .statistic__description {
+    bottom: 15px;
+    left: 15px;
+    line-height: 1;
+    position: absolute;
+    text-transform: uppercase; }
+
 .p--default .nav-tabs {
   border: 0; }
 
