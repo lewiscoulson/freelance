@@ -1,0 +1,30 @@
+.tags {
+  font-family: 'NationalBook';
+  list-style: none;
+  padding: 0;
+
+  @include from(tablet) {
+    max-width: 70%;
+  }
+
+  li {
+    border-right: 1px solid $grey-dark;
+    float: left;
+    margin-right: 15px;
+    padding: 0 15px 0 0;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+      padding-right: 0;
+    }
+
+    a {
+      color: $blue-primary;
+      text-transform: uppercase;
+    }
+  }
+}

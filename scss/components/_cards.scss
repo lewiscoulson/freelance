@@ -16,6 +16,10 @@
     text-transform: uppercase;
   }
 
+  &__heading--large {
+    font-size: 30px;
+  }
+
   &__sub-heading {
     color: $grey-light;
     font-family: 'NationalBook';
@@ -45,7 +49,7 @@
     }
   }
 
-  &__time {
+  &__detail {
     color: $grey-light;
     font-family: 'NationalRegular';
     font-size: 20px;

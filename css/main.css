@@ -70,6 +70,8 @@ pre {
     font-size: 15px;
     margin-top: 0;
     text-transform: uppercase; }
+  .p--default .c-card__heading--large {
+    font-size: 30px; }
   .p--default .c-card__sub-heading {
     color: #a8a8a8;
     font-family: 'NationalBook';
@@ -89,7 +91,7 @@ pre {
       padding: 0; }
       .p--default .c-card__comment > .btn i {
         color: #959595; }
-  .p--default .c-card__time {
+  .p--default .c-card__detail {
     color: #a8a8a8;
     font-family: 'NationalRegular';
     font-size: 20px;
@@ -152,3 +154,24 @@ pre {
 .p--default .tab-content {
   background: #fff;
   padding: 10px; }
+
+.p--default .tags {
+  font-family: 'NationalBook';
+  list-style: none;
+  padding: 0; }
+  @media only screen and (min-width: 600px) {
+    .p--default .tags {
+      max-width: 70%; } }
+  .p--default .tags li {
+    border-right: 1px solid #959595;
+    float: left;
+    margin-right: 15px;
+    padding: 0 15px 0 0; }
+    .p--default .tags li:first-child {
+      padding-left: 0; }
+    .p--default .tags li:last-child {
+      border-right: 0;
+      padding-right: 0; }
+    .p--default .tags li a {
+      color: #0592d0;
+      text-transform: uppercase; }
