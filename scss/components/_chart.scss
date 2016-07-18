@@ -1,0 +1,39 @@
+.chart {
+  max-width: 320px;
+}
+
+.chart__item {
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.chart__item-bar,
+.chart__item-label {
+  width: 50%;
+}
+
+.chart__item-bar {
+  float: left;
+}
+
+.chart__item-bar-inner {
+  color: $blue-primary;
+  display: inline-block;
+  background: $blue-light;
+  font-size: 16px;
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.chart__item-label {
+  line-height: 30px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.chart__item-label {
+  float: right;
+}

@@ -58,6 +58,7 @@ pre {
     color: #fff; }
 
 .p--default .c-card {
+  max-width: 500px;
   position: relative; }
   .p--default .c-card__heading {
     color: #0592d0;
@@ -91,6 +92,26 @@ pre {
       padding: 0; }
       .p--default .c-card__comment > .btn i {
         color: #959595; }
+    .p--default .c-card__comment > span {
+      color: #959595; }
+  .p--default .c-card__comments-item {
+    background: #f2f2f2;
+    border-bottom: 1px solid #d6dbe1;
+    font-family: 'NationalBook';
+    padding: 10px;
+    position: relative; }
+    .p--default .c-card__comments-item:last-child {
+      border-bottom: 0; }
+    .p--default .c-card__comments-item .c-card__detail {
+      font-size: 14px; }
+    .p--default .c-card__comments-item p {
+      padding-right: 20px; }
+    .p--default .c-card__comments-item a {
+      color: #0592d0;
+      font-family: 'NationalRegular'; }
+  .p--default .c-card__add-comment {
+    background: #e3e3e3;
+    padding: 10px; }
   .p--default .c-card__detail {
     color: #a8a8a8;
     font-family: 'NationalRegular';
@@ -104,6 +125,42 @@ pre {
     margin-bottom: 15px;
     resize: none;
     text-transform: uppercase; }
+  .p--default .c-card input {
+    height: 43px;
+    text-transform: uppercase; }
+
+.p--default .chart {
+  max-width: 320px; }
+
+.p--default .chart__item {
+  margin-bottom: 5px;
+  overflow: hidden; }
+
+.p--default .chart__item-bar,
+.p--default .chart__item-label {
+  width: 50%; }
+
+.p--default .chart__item-bar {
+  float: left; }
+
+.p--default .chart__item-bar-inner {
+  color: #0592d0;
+  display: inline-block;
+  background: #c6e5f4;
+  font-size: 16px;
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 10px;
+  text-align: right; }
+
+.p--default .chart__item-label {
+  line-height: 30px;
+  padding-left: 10px;
+  text-transform: uppercase; }
+
+.p--default .chart__item-label {
+  float: right; }
 
 .p--default .statistic {
   background: #c6e5f4;
