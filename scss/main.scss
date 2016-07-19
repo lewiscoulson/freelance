@@ -4,5 +4,6 @@
 @import './mixins';
 
 .p--default {
+  max-width: 1000px;
   @import './components/all';
 }

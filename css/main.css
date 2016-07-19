@@ -33,227 +33,223 @@ body {
 pre {
   margin: 15px 0 30px; }
 
-.p--default .c-branding {
-  max-width: 100%; }
-
-.p--default .btn .fa {
-  font-weight: bold; }
-  .p--default .btn .fa.left {
-    margin-right: 10px; }
-  .p--default .btn .fa.right {
-    margin-left: 10px; }
-
-.p--default .btn-primary {
-  background-color: #0592d0;
-  border-color: #0592d0;
-  font-size: 18px;
-  min-width: 105px;
-  padding: 8px 12px;
-  text-transform: uppercase; }
-
-.p--default .btn-group .btn {
-  font-size: 16px;
-  text-transform: uppercase; }
-  .p--default .btn-group .btn.active {
-    background: #0592d0;
+.p--default {
+  max-width: 1000px; }
+  .p--default .c-branding {
+    max-width: 100%; }
+  .p--default .btn .fa {
+    font-weight: bold; }
+    .p--default .btn .fa.left {
+      margin-right: 10px; }
+    .p--default .btn .fa.right {
+      margin-left: 10px; }
+  .p--default .btn-primary {
+    background-color: #0592d0;
     border-color: #0592d0;
-    box-shadow: none;
-    color: #fff; }
-
-.p--default .c-card {
-  max-width: 500px;
-  position: relative; }
-  .p--default .c-card__heading {
-    color: #0592d0;
-    font-family: 'NationalRegular';
-    font-size: 20px;
-    margin-bottom: 0; }
-  .p--default .c-card__heading--dark {
-    color: #3c3f41;
-    font-family: 'NationalBold';
-    font-size: 15px;
-    margin-top: 0;
+    font-size: 18px;
+    min-width: 105px;
+    padding: 8px 12px;
     text-transform: uppercase; }
-  .p--default .c-card__heading--large {
-    font-size: 30px; }
-  .p--default .c-card__sub-heading {
-    color: #a8a8a8;
-    font-family: 'NationalBook';
-    font-size: 16px; }
-  .p--default .c-card__body {
-    color: #4e4e4e;
-    font-family: 'NationalBook';
-    font-size: 16px; }
-  .p--default .c-card__comment {
-    border-top: 1px solid #e9ebee;
-    font-family: 'NationalBook';
-    font-size: 16px;
-    margin-top: 12px;
-    padding-top: 12px; }
-    .p--default .c-card__comment > .btn {
-      color: #4e4e4e;
-      padding: 0; }
-      .p--default .c-card__comment > .btn i {
-        color: #959595; }
-    .p--default .c-card__comment > span {
-      color: #959595; }
-  .p--default .c-card__comments-item {
-    background: #f2f2f2;
-    border-bottom: 1px solid #d6dbe1;
-    font-family: 'NationalBook';
-    padding: 10px;
-    position: relative; }
-    .p--default .c-card__comments-item:last-child {
-      border-bottom: 0; }
-    .p--default .c-card__comments-item .c-card__detail {
-      font-size: 14px; }
-    .p--default .c-card__comments-item p {
-      padding-right: 20px; }
-    .p--default .c-card__comments-item a {
-      color: #0592d0;
-      font-family: 'NationalRegular'; }
-  .p--default .c-card__add-comment {
-    background: #e3e3e3;
-    padding: 10px; }
-  .p--default .c-card__detail {
-    color: #a8a8a8;
-    font-family: 'NationalRegular';
-    font-size: 20px;
-    position: absolute;
-    right: 10px;
-    top: 10px; }
-  .p--default .c-card__more-info {
-    color: #959595;
-    font-size: 22px;
-    margin: 10px 10px 0; }
-  .p--default .c-card textarea {
-    background: #f2f2f2;
-    border: 1px solid #d6dbe1;
-    margin-bottom: 15px;
-    resize: none;
-    text-transform: uppercase; }
-  .p--default .c-card input {
-    height: 43px;
-    text-transform: uppercase; }
-
-.p--default .chart {
-  max-width: 320px; }
-
-.p--default .chart__item {
-  margin-bottom: 5px;
-  overflow: hidden; }
-
-.p--default .chart__item-bar,
-.p--default .chart__item-label {
-  width: 50%; }
-
-.p--default .chart__item-bar {
-  float: left; }
-
-.p--default .chart__item-bar-inner {
-  color: #0592d0;
-  display: inline-block;
-  background: #c6e5f4;
-  font-size: 16px;
-  float: right;
-  height: 30px;
-  line-height: 30px;
-  padding-right: 10px;
-  text-align: right; }
-
-.p--default .chart__item-label {
-  line-height: 1;
-  padding-left: 10px;
-  padding-top: 8px;
-  text-transform: uppercase; }
-
-.p--default .chart__item-label {
-  float: right; }
-
-.p--default .statistic {
-  background: #c6e5f4;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  max-width: 150px;
-  min-height: 100px;
-  padding: 0 15px 15px;
-  position: relative; }
-  .p--default .statistic__heading {
-    display: block;
-    font-family: 'NationalBold';
-    font-size: 36px;
-    line-height: 36px;
-    padding-top: 7px;
-    text-transform: uppercase; }
-  .p--default .statistic__description {
-    bottom: 15px;
-    left: 15px;
-    line-height: 1;
-    position: absolute;
-    text-transform: uppercase; }
-
-.p--default .c-tabs {
-  max-width: 500px; }
-
-.p--default .nav-tabs {
-  border: 0; }
-
-.p--default .nav-tabs > li > a {
-  background: #959595;
-  border: 0;
-  color: #3c3f41;
-  font-size: 18px;
-  margin-right: 10px;
-  padding: 8px 20px 7px;
-  text-transform: uppercase; }
-  .p--default .nav-tabs > li > a:hover, .p--default .nav-tabs > li > a:focus {
-    border: 0; }
-  @media only screen and (min-width: 600px) {
-    .p--default .nav-tabs > li > a {
-      min-width: 140px; } }
-
-.p--default .nav-tabs > li.active > a {
-  background: #fff; }
-
-.p--default .nav-tabs > li.no-bg > a {
-  background: none;
-  color: #0592d0; }
-
-.p--default .tab-content {
-  background: #fff;
-  padding: 10px; }
-
-.p--default .tags {
-  font-family: 'NationalBook';
-  list-style: none;
-  padding: 0; }
-  @media only screen and (min-width: 600px) {
-    .p--default .tags {
-      max-width: 70%; } }
-  .p--default .tags li {
-    border-right: 1px solid #959595;
-    float: left;
-    margin-right: 15px;
-    padding: 0 15px 0 0; }
-    .p--default .tags li:first-child {
-      padding-left: 0; }
-    .p--default .tags li:last-child {
-      border-right: 0;
-      padding-right: 0; }
-    .p--default .tags li a {
-      color: #0592d0;
+  .p--default .btn-group {
+    margin: 20px 0; }
+    .p--default .btn-group .btn {
+      font-size: 16px;
       text-transform: uppercase; }
-
-.p--default .tooltip-inner {
-  background: #163551;
-  border-radius: 0;
-  font-family: 'NationalRegular';
-  font-size: 16px;
-  max-width: 280px;
-  padding: 8px; }
-
-.p--default .tooltip.top .tooltip-arrow {
-  border-top-color: #163551; }
-
-.p--default .tooltip.in {
-  opacity: 1; }
+      .p--default .btn-group .btn.active {
+        background: #0592d0;
+        border-color: #0592d0;
+        box-shadow: none;
+        color: #fff; }
+  .p--default .c-card {
+    max-width: 600px;
+    position: relative; }
+    .p--default .c-card__heading {
+      color: #0592d0;
+      font-family: 'NationalRegular';
+      font-size: 20px;
+      margin-bottom: 0; }
+    .p--default .c-card__heading--dark {
+      color: #3c3f41;
+      font-family: 'NationalBold';
+      font-size: 15px;
+      margin-top: 0;
+      text-transform: uppercase; }
+    .p--default .c-card__heading--large {
+      font-size: 30px; }
+    .p--default .c-card__sub-heading {
+      color: #a8a8a8;
+      font-family: 'NationalBook';
+      font-size: 16px; }
+    .p--default .c-card__body {
+      color: #4e4e4e;
+      font-family: 'NationalBook';
+      font-size: 16px; }
+    .p--default .c-card__comment {
+      border-top: 1px solid #e9ebee;
+      font-family: 'NationalBook';
+      font-size: 16px;
+      margin-top: 12px;
+      padding-top: 12px; }
+      .p--default .c-card__comment > .btn {
+        color: #4e4e4e;
+        padding: 0; }
+        .p--default .c-card__comment > .btn i {
+          color: #959595; }
+      .p--default .c-card__comment > span {
+        color: #959595; }
+    .p--default .c-card__comments-item {
+      background: #f2f2f2;
+      border-bottom: 1px solid #d6dbe1;
+      font-family: 'NationalBook';
+      padding: 10px;
+      position: relative; }
+      .p--default .c-card__comments-item:last-child {
+        border-bottom: 0; }
+      .p--default .c-card__comments-item .c-card__detail {
+        font-size: 14px; }
+      .p--default .c-card__comments-item p {
+        padding-right: 20px; }
+      .p--default .c-card__comments-item a {
+        color: #0592d0;
+        font-family: 'NationalRegular'; }
+    .p--default .c-card__add-comment {
+      background: #e3e3e3;
+      padding: 10px; }
+    .p--default .c-card__detail {
+      color: #a8a8a8;
+      font-family: 'NationalRegular';
+      font-size: 20px;
+      position: absolute;
+      right: 15px;
+      top: 10px; }
+    .p--default .c-card__more-info {
+      color: #959595;
+      font-size: 22px;
+      margin: 10px 10px 0; }
+    .p--default .c-card textarea {
+      background: #f2f2f2;
+      border: 1px solid #d6dbe1;
+      margin-bottom: 15px;
+      resize: none;
+      text-transform: uppercase; }
+    .p--default .c-card input {
+      height: 43px;
+      text-transform: uppercase; }
+  .p--default .chart {
+    max-width: 320px; }
+    .p--default .chart__item {
+      margin-bottom: 5px;
+      overflow: hidden; }
+    .p--default .chart__item-bar, .p--default .chart__item-label {
+      width: 50%; }
+    .p--default .chart__item-bar {
+      float: left; }
+    .p--default .chart__item-bar-inner {
+      color: #0592d0;
+      display: inline-block;
+      background: #c6e5f4;
+      font-size: 16px;
+      float: right;
+      height: 30px;
+      line-height: 30px;
+      padding-right: 10px;
+      text-align: right; }
+    .p--default .chart__item-label {
+      line-height: 1;
+      padding-left: 10px;
+      padding-top: 8px;
+      text-transform: uppercase; }
+    .p--default .chart__item-label {
+      float: right; }
+    .p--default .chart__heading {
+      font-size: 16px;
+      margin: 3px 0;
+      text-transform: uppercase; }
+    .p--default .chart__link {
+      color: #173652;
+      display: block;
+      margin-right: 50%;
+      text-align: right;
+      text-transform: uppercase; }
+  .p--default .statistic {
+    background: #c6e5f4;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-width: 150px;
+    min-height: 100px;
+    padding: 0 15px 15px;
+    position: relative; }
+    @media only screen and (max-width: 999px) {
+      .p--default .statistic {
+        display: inline-block;
+        margin-right: 5px; } }
+    .p--default .statistic__heading {
+      display: block;
+      font-family: 'NationalBold';
+      font-size: 36px;
+      line-height: 36px;
+      padding-top: 7px;
+      text-transform: uppercase; }
+    .p--default .statistic__description {
+      bottom: 15px;
+      left: 15px;
+      line-height: 1;
+      position: absolute;
+      text-transform: uppercase; }
+  .p--default .c-tabs {
+    margin-top: 20px;
+    max-width: 500px; }
+  .p--default .nav-tabs {
+    border: 0; }
+  .p--default .nav-tabs > li > a {
+    background: #959595;
+    border: 0;
+    color: #3c3f41;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 8px 20px 7px;
+    text-transform: uppercase; }
+    .p--default .nav-tabs > li > a:hover, .p--default .nav-tabs > li > a:focus {
+      border: 0; }
+    @media only screen and (min-width: 600px) {
+      .p--default .nav-tabs > li > a {
+        min-width: 140px; } }
+  .p--default .nav-tabs > li.active > a {
+    background: #fff; }
+  .p--default .nav-tabs > li.no-bg > a {
+    background: none;
+    color: #0592d0; }
+  .p--default .tab-content {
+    background: #fff;
+    padding: 10px; }
+  .p--default .tags {
+    font-family: 'NationalBook';
+    list-style: none;
+    padding: 0; }
+    @media only screen and (min-width: 600px) {
+      .p--default .tags {
+        max-width: 70%; } }
+    .p--default .tags li {
+      border-right: 1px solid #959595;
+      float: left;
+      margin-right: 15px;
+      padding: 0 15px 0 0; }
+      .p--default .tags li:first-child {
+        padding-left: 0; }
+      .p--default .tags li:last-child {
+        border-right: 0;
+        padding-right: 0; }
+      .p--default .tags li a {
+        color: #0592d0;
+        text-transform: uppercase; }
+  .p--default .tooltip-inner {
+    background: #163551;
+    border-radius: 0;
+    font-family: 'NationalRegular';
+    font-size: 16px;
+    max-width: 280px;
+    padding: 8px; }
+  .p--default .tooltip.top .tooltip-arrow {
+    border-top-color: #163551; }
+  .p--default .tooltip.in {
+    opacity: 1; }

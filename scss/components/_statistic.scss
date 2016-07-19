@@ -7,6 +7,11 @@
   padding: 0 15px 15px;
   position: relative;
 
+  @include upto(desktop) {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
   &__heading {
     display: block;
     font-family: 'NationalBold';
