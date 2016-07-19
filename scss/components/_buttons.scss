@@ -1,38 +1,50 @@
 .btn {
-    .fa {
-      font-weight: bold;
+  .fa {
+    font-weight: bold;
 
-      &.left {
-        margin-right: 10px;
-      }
+    &.left {
+      margin-right: 10px;
+    }
 
-      &.right {
-        margin-left: 10px;
-      }
+    &.right {
+      margin-left: 10px;
     }
   }
+}
 
-  .btn-primary {
-    background-color: $blue-primary;
-    border-color: $blue-primary;
-    font-size: 18px;
-    min-width: 105px;
-    padding: 8px 12px;
+.btn-primary {
+  background-color: $blue-primary;
+  border-color: $blue-primary;
+  font-size: 18px;
+  min-width: 105px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+
+.btn-group {
+  margin: 20px 0;
+
+  .btn {
+    font-size: 16px;
     text-transform: uppercase;
+
+    &.active {
+      background: $blue-primary;
+      border-color: $blue-primary;
+      box-shadow: none;
+      color: $white;
+    }
+  }
+}
+
+.btn-group-container {
+  @include upto(tablet) {
+    overflow-x: auto;
   }
 
   .btn-group {
-    margin: 20px 0;
-
-    .btn {
-      font-size: 16px;
-      text-transform: uppercase;
-
-      &.active {
-        background: $blue-primary;
-        border-color: $blue-primary;
-        box-shadow: none;
-        color: $white;
-      }
+    @include upto(tablet) {
+      min-width: 550px;
     }
   }
+}

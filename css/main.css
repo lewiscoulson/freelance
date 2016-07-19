@@ -60,6 +60,12 @@ pre {
         border-color: #0592d0;
         box-shadow: none;
         color: #fff; }
+  @media only screen and (max-width: 599px) {
+    .p--default .btn-group-container {
+      overflow-x: auto; } }
+  @media only screen and (max-width: 599px) {
+    .p--default .btn-group-container .btn-group {
+      min-width: 550px; } }
   .p--default .c-card {
     position: relative; }
     .p--default .c-card__heading {
