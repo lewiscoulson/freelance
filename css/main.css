@@ -61,7 +61,6 @@ pre {
         box-shadow: none;
         color: #fff; }
   .p--default .c-card {
-    max-width: 600px;
     position: relative; }
     .p--default .c-card__heading {
       color: #0592d0;
@@ -197,8 +196,7 @@ pre {
       position: absolute;
       text-transform: uppercase; }
   .p--default .c-tabs {
-    margin-top: 20px;
-    max-width: 500px; }
+    margin-top: 20px; }
   .p--default .nav-tabs {
     border: 0; }
   .p--default .nav-tabs > li > a {
