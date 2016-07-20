@@ -139,9 +139,12 @@
     }
 
     > div:nth-child(2) {
-      border-left: 2px solid #e3e3e3;
-      border-right: 2px solid #e3e3e3;
       overflow: hidden;
+
+      @include from(tablet) {
+        border-left: 2px solid #e3e3e3;
+        border-right: 2px solid #e3e3e3;
+      }
     }
 
     > div:nth-child(3) {

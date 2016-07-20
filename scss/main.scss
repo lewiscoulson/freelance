@@ -3,6 +3,8 @@
 @import './library';
 @import './mixins';
 
+@import './lib/awesome-bootstrap-checkbox';
+
 .p--default {
   max-width: 1000px;
   @import './components/all';

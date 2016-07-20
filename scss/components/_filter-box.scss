@@ -1,0 +1,124 @@
+.c-filter-box {
+  background: $blue-dark;
+  color: $white;
+  overflow: hidden;
+  padding: 5px;
+  position: relative;
+
+  @include from(desktop) {
+    padding: 12px 20px;
+  }
+
+  &__heading {
+    color: $white;
+    font-size: 18px;
+    margin: 5px 0 10px;
+    text-transform: uppercase;
+  }
+
+  &__top {
+    overflow: hidden;
+
+    .btn {
+      color: $blue-primary;
+      text-transform: uppercase;
+    }
+
+    @include from(desktop) {
+      width: 33.333%;
+    }
+  }
+
+  &__filters {
+    @include from(desktop) {
+      display: none;
+    }
+  }
+
+  &__desktop-filters {
+    display: none;
+
+    @include from(desktop) {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  &__desktop-tags {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 65%;
+
+    @include from(desktop) {
+      display: block;
+    }
+
+    .btn-group {
+      margin-top: 0;
+    }
+  }
+
+  .panel {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    color: $white;
+  }
+
+  .panel-group {
+    border-top: 1px solid $white;
+    margin: 10px 0;
+  }
+
+  .panel-default {
+    > .panel-heading {
+      background: none;
+      border: 0;
+      border-bottom: 1px solid $white;
+      border-radius: 0;
+      color: $white;
+      padding: 10px 0;
+      text-transform: uppercase;
+
+      + .panel-collapse > .panel-body {
+        border-top: 0;
+        padding: 0;
+      }
+    }
+  }
+
+
+
+  .panel-group .panel + .panel {
+    margin-top: 0;
+  }
+
+  label {
+    font-family: 'NationalBook';
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .checkbox label::after {
+    color: #18bf6d;
+  }
+
+  .input-group {
+    @include from(desktop) {
+      width: 33.333%;
+    }
+  }
+
+  .input-group-addon {
+    background: $white;
+    color: #b5b5b5;
+  }
+
+  .form-control {
+    border: 0;
+    color: #b5b5b5;
+    text-transform: uppercase;
+  }
+}

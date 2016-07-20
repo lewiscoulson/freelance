@@ -87,6 +87,222 @@
             </div>
           </div>
         </div>
+
+        <div class="c-filter-box">
+          <div class="c-filter-box__top">
+            <h3 class="c-filter-box__heading pull-left">Filters</h3>
+            <button type="button" class="btn btn-link pull-right">Clear</button>
+          </div>
+
+          <div class="c-filter-box__desktop-tags">
+             <h3 class="c-filter-box__heading">Tags</h3>
+             <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" autocomplete="off"> Checkbox 2
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" autocomplete="off"> Checkbox 3
+              </label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-search" aria-hidden="true"></i></span>
+            <input type="text" class="form-control" placeholder="Search" aria-describedby="sizing-addon3">
+          </div>
+
+          <div class="c-filter-box__desktop-filters">
+            <div class="row">
+              <div class="col-md-4">
+                <h4>Sector</h4>
+                <div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="sector-1-d">
+                    <label for="sector-1-d">
+                      Sector 1
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="sector-2-d">
+                    <label for="sector-2-d">
+                      Sector 2
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="sector-3-d">
+                    <label for="sector-3-d">
+                      Sector 3
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4>Stage</h4>
+                <div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="stage-1-d">
+                    <label for="stage-1-d">
+                      Stage 1
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="stage-2-d">
+                    <label for="stage-2-d">
+                      Stage 2
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="stage-3-d">
+                    <label for="stage-3-d">
+                      Stage 3
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4>Region</h4>
+                <div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="region-1-d">
+                    <label for="region-1-d">
+                      Region 1
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="region-2-d">
+                    <label for="region-2-d">
+                      Region 2
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="region-3-d">
+                    <label for="region-3-d">
+                      Region 3
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-filter-box__filters">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Sector
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <form role="form">
+                      <div class="checkbox">
+                        <input type="checkbox" id="sector-1">
+                        <label for="sector-1">
+                          Sector 1
+                        </label>
+                      </div>
+
+                      <div class="checkbox">
+                        <input type="checkbox" id="sector-2">
+                        <label for="sector-2">
+                          Sector 2
+                        </label>
+                      </div>
+
+                      <div class="checkbox">
+                        <input type="checkbox" id="sector-3">
+                        <label for="sector-3">
+                          Sector 3
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Stage
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <div class="checkbox">
+                      <input type="checkbox" id="stage-1">
+                      <label for="stage-1">
+                        Stage 1
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" id="stage-2">
+                      <label for="stage-2">
+                        Stage 2
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" id="stage-3">
+                      <label for="stage-3">
+                        Stage 3
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Region
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    <div class="checkbox">
+                      <input type="checkbox" id="region-1">
+                      <label for="region-1">
+                        Region 1
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" id="region-2">
+                      <label for="region-2">
+                        Region 2
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" id="region-3">
+                      <label for="region-3">
+                        Region 3
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
