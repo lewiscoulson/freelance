@@ -111,3 +111,116 @@
     text-transform: uppercase;
   }
 }
+
+.c-card--wide {
+  @include between(tablet, desktop) {
+    .col-md-6,
+    .col-md-4,
+    .col-md-2 {
+      float: left;
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+    .col-md-4 {
+      width: 25%;
+    }
+
+    .col-md-2 {
+      width: 25%;
+    }
+  }
+
+  .row {
+    @include from(tablet) {
+      display: flex;
+    }
+
+    > div:nth-child(2) {
+      border-left: 2px solid #e3e3e3;
+      border-right: 2px solid #e3e3e3;
+      overflow: hidden;
+    }
+
+    > div:nth-child(3) {
+      @include between(tablet, desktop) {
+        display: flex;
+      }
+
+      > div {
+        float: left;
+        width: 50%;
+
+        &:nth-child(1) {
+          @include between(tablet, desktop) {
+            border-right: 2px solid #e3e3e3;
+            padding-right: 15px;
+          }
+
+          @include from(desktop) {
+            display: none;
+          }
+        }
+
+        .c-card__social {
+          color: $blue-primary;
+          display: block;
+          font-size: 20px;
+          margin: 5px 0 15px;
+          text-align: center;
+
+          i {
+            color: $grey-dark;
+          }
+
+          @include upto(tablet) {
+            float: left;
+            width: 40%;
+          }
+        }
+
+        @include upto(desktop) {
+          .btn-primary {
+            min-width: 0;
+            padding: 8px;
+
+            i {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-primary {
+      @include from(tablet) {
+        bottom: 0;
+        position: absolute;
+        right: 15px;
+      }
+    }
+  }
+
+  .tags {
+    margin-top: 10px;
+    max-width: 100%;
+
+    li {
+      @include between(tablet, desktop) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .c-card__detail {
+    top: 0;
+
+    @include upto(tablet) {
+      float: right;
+      margin-right: 15px;
+      position: static;
+    }
+  }
+}
