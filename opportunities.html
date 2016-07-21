@@ -17,26 +17,26 @@
       <img src="images/branding.png" class="c-branding" alt="">
     </a>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12" id="filter-cards">
         <div class="c-filter-box">
           <div class="c-filter-box__top">
             <h3 class="c-filter-box__heading pull-left">Filters</h3>
-            <button type="button" class="btn btn-link pull-right">Clear</button>
+            <button type="button" class="btn btn-link pull-right" id="clear-search">Clear</button>
           </div>
 
           <div class="c-filter-box__desktop-tags">
              <h3 class="c-filter-box__heading">Tags</h3>
              <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary active">
+              <label class="btn btn-primary active" id="filter-health">
                 <input type="checkbox" autocomplete="off" checked> Health
               </label>
-              <label class="btn btn-primary">
+              <label class="btn btn-primary" id="filter-software">
                 <input type="checkbox" autocomplete="off"> Software
               </label>
-              <label class="btn btn-primary">
+              <label class="btn btn-primary" id="filter-learning">
                 <input type="checkbox" autocomplete="off"> Learning
               </label>
-              <label class="btn btn-primary">
+              <label class="btn btn-primary" id="filter-education">
                 <input type="checkbox" autocomplete="off"> Education
               </label>
             </div>
@@ -44,7 +44,7 @@
 
           <div class="input-group">
             <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-search" aria-hidden="true"></i></span>
-            <input type="text" class="form-control" placeholder="Search" aria-describedby="sizing-addon3">
+            <input type="text" class="form-control fuzzy-search" id="search-cards" placeholder="Search" aria-describedby="sizing-addon3">
           </div>
 
           <div class="c-filter-box__desktop-filters">
@@ -287,67 +287,115 @@
             <label class="btn btn-default">
               <input type="radio" name="options" id="option2" autocomplete="off">Oldest
             </label>
-            <label class="btn btn-default">
+            <label class="btn btn-default" id="sort-az">
               <input type="radio" name="options" id="option3" autocomplete="off">A-Z
             </label>
-            <label class="btn btn-default">
+            <label class="btn btn-default" id="sort-za">
               <input type="radio" name="options" id="option4" autocomplete="off">Z-A
             </label>
-            <label class="btn btn-default">
+            <label class="btn btn-default" id="sort-h2l">
               <input type="radio" name="options" id="option5" autocomplete="off">Raising H2L
             </label>
-            <label class="btn btn-default">
+            <label class="btn btn-default" id="sort-l2h">
               <input type="radio" name="options" id="option6" autocomplete="off">Raising L2H
             </label>
-            <label class="btn btn-default">
+            <label class="btn btn-default sort" data-sort="likes">
               <input type="radio" name="options" id="option7" autocomplete="off">Likes
             </label>
           </div>
         </div>
 
-        <div class="panel panel-default c-card c-card--wide">
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object" src="images/media-image.png" alt="" />
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading c-card__heading c-card__heading--large">Lighter Blue Industries</h4>
-                    <div class="c-card__body">
-                      <p>Deep Blue specialises in bringing the latest technological advancements to digital consumers through ecommerce subscription channels.</p>
+        <div class="list">
+          <div class="panel panel-default c-card c-card--wide">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="images/media-image.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading c-card__heading c-card__heading--large title">Lighter Blue Industries</h4>
+                      <div class="c-card__body">
+                        <p>Deep Blue specialises in bringing the latest technological advancements to digital consumers through ecommerce subscription channels.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <ul class="tags pull-left">
-                  <li><a href="">biotech, software, technology</a></li>
-                  <li><a href="">software</a></li>
-                  <li><a href="">early stage</a></li>
-                  <li><a href="">london, uk</a></li>
-                </ul>
-              </div>
-               <div class="col-md-2">
-                <div>
-                  <span class="c-card__social">
-                    <i class="fa fa-comment left" aria-hidden="true"></i> 4
-                  </span>
-                  <span class="c-card__social">
-                    <i class="fa fa-thumbs-up left" aria-hidden="true"></i> 4
-                  </span>
+                <div class="col-md-4">
+                  <ul class="tags pull-left">
+                    <li><a href="" class="tags">education, learning</a></li>
+                    <li><a href="">software</a></li>
+                    <li><a href="">early stage</a></li>
+                    <li><a href="">london, uk</a></li>
+                  </ul>
                 </div>
-                <div>
-                  <a href="" class="btn btn-primary pull-right">View <i class="fa fa-angle-right right" aria-hidden="true"></i></a>
-                  <span class="c-card__detail">£10M</span>
+                 <div class="col-md-2">
+                  <div>
+                    <span class="c-card__social">
+                      <i class="fa fa-comment left" aria-hidden="true"></i> 4
+                    </span>
+                    <span class="c-card__social likes">
+                      <i class="fa fa-thumbs-up left" aria-hidden="true"></i> 1
+                    </span>
+                  </div>
+                  <div>
+                    <a href="" class="btn btn-primary pull-right">View <i class="fa fa-angle-right right" aria-hidden="true"></i></a>
+                    <span class="c-card__detail raising">£20M</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default c-card c-card--wide">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="images/media-image.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading c-card__heading c-card__heading--large title">Blue Industries</h4>
+                      <div class="c-card__body">
+                        <p>Blue specialises in bringing the latest technological advancements to digital consumers through ecommerce subscription channels.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <ul class="tags pull-left">
+                    <li><a href="" class="tags">health, software</a></li>
+                    <li><a href="">early stage</a></li>
+                    <li><a href="">london, uk</a></li>
+                  </ul>
+                </div>
+                 <div class="col-md-2">
+                  <div>
+                    <span class="c-card__social">
+                      <i class="fa fa-comment left" aria-hidden="true"></i> 4
+                    </span>
+                    <span class="c-card__social likes">
+                      <i class="fa fa-thumbs-up left" aria-hidden="true"></i> 15
+                    </span>
+                  </div>
+                  <div>
+                    <a href="" class="btn btn-primary pull-right">View <i class="fa fa-angle-right right" aria-hidden="true"></i></a>
+                    <span class="c-card__detail raising">£10M</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
+
       </div>
     </div>
   </div>
@@ -357,9 +405,94 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
+  <script src="js/list.fuzzysearch.js"></script>
+
   <script>
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="tooltip"]').tooltip();
+
+      var options = {
+        valueNames: ['title', 'likes', 'raising', 'tags'],
+        plugins: [ ListFuzzySearch() ]
+      };
+
+      var userList = new List('filter-cards', options);
+
+      function sortAZ() {
+        userList.sort('title', { order: "asc" });
+      }
+
+      function sortZA() {
+        userList.sort('title', { order: "desc" });
+      }
+
+      function sortH2l() {
+        userList.sort('raising', { order: "desc" });
+      }
+
+      function sortL2h() {
+        userList.sort('raising', { order: "asc" });
+      }
+
+      function filterByTag(tag) {
+        userList.filter(function(item) {
+          if (item.values().tags.indexOf(tag) !== -1) {
+            return true
+          }
+
+          return false;
+        });
+      }
+
+      function filterHandler(tag) {
+        if ($(this).hasClass('active')) {
+          userList.filter();
+        } else {
+          filterByTag(tag);
+        }
+      }
+
+      $('#sort-az').click(function(e) {
+        sortAZ();
+      });
+
+      $('#sort-za').click(function(e) {
+        sortZA();
+      });
+
+      $('#sort-h2l').click(function(e) {
+        sortH2l();
+      });
+
+      $('#sort-l2h').click(function(e) {
+        sortL2h();
+      });
+
+      $('#filter-health').click(function(e) {
+        filterHandler('health');
+      });
+
+      $('#filter-software').click(function(e) {
+        filterHandler('software');
+      });
+
+      $('#filter-learning').click(function(e) {
+        filterHandler('learning');
+      });
+
+      $('#filter-education').click(function(e) {
+        filterHandler('education');
+      });
+
+      $('#clear-search').click(function(e) {
+        $('#search-cards').val('');
+        // userList.fuzzySearch.search(' ');
+      });
+
+
+
+
     });
   </script>
 </body>
