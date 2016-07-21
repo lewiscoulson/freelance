@@ -453,6 +453,10 @@
         }
       }
 
+      function resetSearch() {
+        userList.fuzzySearch.search('');
+      }
+
       $('#sort-az').click(function(e) {
         sortAZ();
       });
@@ -487,12 +491,8 @@
 
       $('#clear-search').click(function(e) {
         $('#search-cards').val('');
-        // userList.fuzzySearch.search(' ');
+        resetSearch();
       });
-
-
-
-
     });
   </script>
 </body>
