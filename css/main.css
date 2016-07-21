@@ -544,6 +544,7 @@ input[type="radio"] .styled:checked + label::after {
     background: #163551;
     color: #fff;
     overflow: hidden;
+    margin-top: 20px;
     padding: 5px;
     position: relative; }
     @media only screen and (min-width: 1000px) {
@@ -580,6 +581,11 @@ input[type="radio"] .styled:checked + label::after {
       @media only screen and (min-width: 1000px) {
         .p--default .c-filter-box__desktop-tags {
           display: block; } }
+      .p--default .c-filter-box__desktop-tags .btn {
+        background: none;
+        border-color: #fff;
+        border-radius: 5px !important;
+        margin-right: 5px; }
       .p--default .c-filter-box__desktop-tags .btn-group {
         margin-top: 0; }
     .p--default .c-filter-box .panel {
@@ -598,8 +604,16 @@ input[type="radio"] .styled:checked + label::after {
       color: #fff;
       padding: 10px 0;
       text-transform: uppercase; }
+      .p--default .c-filter-box .panel-default > .panel-heading i {
+        margin-left: 5px; }
+      .p--default .c-filter-box .panel-default > .panel-heading [aria-expanded='true'] i {
+        transform: rotate(180deg);
+        position: relative;
+        top: 2px; }
       .p--default .c-filter-box .panel-default > .panel-heading + .panel-collapse > .panel-body {
         border-top: 0;
+        max-height: 150px;
+        overflow-y: auto;
         padding: 0; }
     .p--default .c-filter-box .panel-group .panel + .panel {
       margin-top: 0; }

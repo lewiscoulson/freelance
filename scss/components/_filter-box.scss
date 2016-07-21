@@ -2,6 +2,7 @@
   background: $blue-dark;
   color: $white;
   overflow: hidden;
+  margin-top: 20px;
   padding: 5px;
   position: relative;
 
@@ -55,6 +56,13 @@
       display: block;
     }
 
+    .btn{
+      background: none;
+      border-color: $white;
+      border-radius: 5px !important;
+      margin-right: 5px;
+    }
+
     .btn-group {
       margin-top: 0;
     }
@@ -82,8 +90,20 @@
       padding: 10px 0;
       text-transform: uppercase;
 
+      i {
+        margin-left: 5px;
+      }
+
+      [aria-expanded='true'] i {
+        transform: rotate(180deg);
+        position: relative;
+        top: 2px;
+      }
+
       + .panel-collapse > .panel-body {
         border-top: 0;
+        max-height: 150px;
+        overflow-y: auto;
         padding: 0;
       }
     }
