@@ -92,6 +92,10 @@
     top: 10px;
   }
 
+  &__date {
+    display: none;
+  }
+
   &__more-info {
     color: $grey-dark;
     font-size: 22px;

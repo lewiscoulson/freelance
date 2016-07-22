@@ -422,6 +422,8 @@ input[type="radio"] .styled:checked + label::after {
       position: absolute;
       right: 15px;
       top: 10px; }
+    .p--default .c-card__date {
+      display: none; }
     .p--default .c-card__more-info {
       color: #959595;
       font-size: 22px;

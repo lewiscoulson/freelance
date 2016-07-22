@@ -27,7 +27,7 @@
           <div class="c-filter-box__desktop-tags">
              <h3 class="c-filter-box__heading">Tags</h3>
              <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-primary active" id="filter-health">
+              <label class="btn btn-primary" id="filter-health">
                 <input type="checkbox" autocomplete="off" checked> Health
               </label>
               <label class="btn btn-primary" id="filter-software">
@@ -51,75 +51,75 @@
             <div class="row">
               <div class="col-md-4">
                 <h4>Sector</h4>
-                <div>
+                <div class="filters-sector">
                   <div class="checkbox">
-                    <input type="checkbox" id="sector-1-d">
+                    <input type="checkbox" name="software" id="sector-1-d">
                     <label for="sector-1-d">
-                      Sector 1
+                      Software
                     </label>
                   </div>
 
                   <div class="checkbox">
-                    <input type="checkbox" id="sector-2-d">
+                    <input type="checkbox" name="hardware" id="sector-2-d">
                     <label for="sector-2-d">
-                      Sector 2
+                      Hardware
                     </label>
                   </div>
 
                   <div class="checkbox">
-                    <input type="checkbox" id="sector-3-d">
+                    <input type="checkbox" name="health" id="sector-3-d">
                     <label for="sector-3-d">
-                      Sector 3
+                      Health
                     </label>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <h4>Stage</h4>
-                <div>
+                <div class="filters-stage">
                   <div class="checkbox">
-                    <input type="checkbox" id="stage-1-d">
+                    <input type="checkbox" name="early stage" id="stage-1-d">
                     <label for="stage-1-d">
-                      Stage 1
+                      Early stage
                     </label>
                   </div>
 
                   <div class="checkbox">
-                    <input type="checkbox" id="stage-2-d">
+                    <input type="checkbox" name="mid stage" id="stage-2-d">
                     <label for="stage-2-d">
-                      Stage 2
+                      Mid stage
                     </label>
                   </div>
 
                   <div class="checkbox">
-                    <input type="checkbox" id="stage-3-d">
+                    <input type="checkbox" name="late stage" id="stage-3-d">
                     <label for="stage-3-d">
-                      Stage 3
+                      Late stage
                     </label>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <h4>Region</h4>
-                <div>
+                <div class="filters-region">
                   <div class="checkbox">
-                    <input type="checkbox" id="region-1-d">
+                    <input type="checkbox" name="london" id="region-1-d">
                     <label for="region-1-d">
-                      Region 1
+                      London
                     </label>
                   </div>
 
                   <div class="checkbox">
-                    <input type="checkbox" id="region-2-d">
+                    <input type="checkbox" name="berlin" id="region-2-d">
                     <label for="region-2-d">
-                      Region 2
+                      Berlin
                     </label>
                   </div>
 
                   <div class="checkbox">
-                    <input type="checkbox" id="region-3-d">
+                    <input type="checkbox" name="new york" id="region-3-d">
                     <label for="region-3-d">
-                      Region 3
+                      New york
                     </label>
                   </div>
                 </div>
@@ -137,26 +137,26 @@
                   </h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
+                  <div class="panel-body filters-sector">
                     <form role="form">
                       <div class="checkbox">
-                        <input type="checkbox" id="sector-1">
+                        <input type="checkbox" name="software" id="sector-1">
                         <label for="sector-1">
-                          Sector 1
+                          Software
                         </label>
                       </div>
 
                       <div class="checkbox">
-                        <input type="checkbox" id="sector-2">
+                        <input type="checkbox" name="hardware" id="sector-2">
                         <label for="sector-2">
-                          Sector 2
+                          Hardware
                         </label>
                       </div>
 
                       <div class="checkbox">
-                        <input type="checkbox" id="sector-3">
+                        <input type="checkbox" name="health" id="sector-3">
                         <label for="sector-3">
-                          Sector 3
+                          Health
                         </label>
                       </div>
                     </form>
@@ -173,28 +173,27 @@
                   </h4>
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="panel-body">
+                  <div class="panel-body filters-stage">
                     <div class="checkbox">
-                      <input type="checkbox" id="stage-1">
+                      <input type="checkbox" name="early stage" id="stage-1">
                       <label for="stage-1">
-                        Stage 1
+                        Early stage
                       </label>
                     </div>
 
                     <div class="checkbox">
-                      <input type="checkbox" id="stage-2">
+                      <input type="checkbox" name="mid stage" id="stage-2">
                       <label for="stage-2">
-                        Stage 2
+                        Mid stage
                       </label>
                     </div>
 
                     <div class="checkbox">
-                      <input type="checkbox" id="stage-3">
+                      <input type="checkbox" name="late stage" id="stage-3">
                       <label for="stage-3">
-                        Stage 3
+                        Late stage
                       </label>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -208,25 +207,25 @@
                   </h4>
                 </div>
                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                  <div class="panel-body">
+                  <div class="panel-body filters-region">
                     <div class="checkbox">
-                      <input type="checkbox" id="region-1">
+                      <input type="checkbox" name="london" id="region-1">
                       <label for="region-1">
-                        Region 1
+                        London
                       </label>
                     </div>
 
                     <div class="checkbox">
-                      <input type="checkbox" id="region-2">
+                      <input type="checkbox" name="berlin" id="region-2">
                       <label for="region-2">
-                        Region 2
+                        Berlin
                       </label>
                     </div>
 
                     <div class="checkbox">
-                      <input type="checkbox" id="region-3">
+                      <input type="checkbox" name="new york" id="region-3">
                       <label for="region-3">
-                        Region 3
+                        New york
                       </label>
                     </div>
 
@@ -243,30 +242,30 @@
                   </h4>
                 </div>
                 <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                  <div class="panel-body">
+                  <div class="panel-body filters-tags">
                     <div class="checkbox">
-                      <input type="checkbox" id="tags-1">
+                      <input type="checkbox" name="health" id="tags-1">
                       <label for="tags-1">
                         Health
                       </label>
                     </div>
 
                     <div class="checkbox">
-                      <input type="checkbox" id="tags-2">
+                      <input type="checkbox" name="software" id="tags-2">
                       <label for="tags-2">
                         Software
                       </label>
                     </div>
 
                     <div class="checkbox">
-                      <input type="checkbox" id="tags-3">
+                      <input type="checkbox" name="learning" id="tags-3">
                       <label for="tags-3">
                         Learning
                       </label>
                     </div>
 
                     <div class="checkbox">
-                      <input type="checkbox" id="tags-4">
+                      <input type="checkbox" name="education" id="tags-4">
                       <label for="tags-4">
                         Education
                       </label>
@@ -281,10 +280,10 @@
 
         <div class="btn-group-container">
           <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-default active">
+            <label class="btn btn-default active" id="sort-newest">
               <input type="radio" name="options" id="option1" autocomplete="off" checked>Newest
             </label>
-            <label class="btn btn-default">
+            <label class="btn btn-default" id="sort-oldest">
               <input type="radio" name="options" id="option2" autocomplete="off">Oldest
             </label>
             <label class="btn btn-default" id="sort-az">
@@ -326,10 +325,10 @@
                 </div>
                 <div class="col-md-4">
                   <ul class="tags pull-left">
-                    <li><a href="" class="tags">education, learning</a></li>
-                    <li><a href="">software</a></li>
-                    <li><a href="">early stage</a></li>
-                    <li><a href="">london, uk</a></li>
+                    <li><a href="" class="tag">education, learning</a></li>
+                    <li><a href="" class="sector">software</a></li>
+                    <li><a href="" class="stage">early stage</a></li>
+                    <li><a href="" class="region">london</a></li>
                   </ul>
                 </div>
                  <div class="col-md-2">
@@ -344,6 +343,7 @@
                   <div>
                     <a href="" class="btn btn-primary pull-right">View <i class="fa fa-angle-right right" aria-hidden="true"></i></a>
                     <span class="c-card__detail raising">£20M</span>
+                    <span class="c-card__date date">22/07/2016</span>
                   </div>
                 </div>
               </div>
@@ -370,9 +370,10 @@
                 </div>
                 <div class="col-md-4">
                   <ul class="tags pull-left">
-                    <li><a href="" class="tags">health, software</a></li>
-                    <li><a href="">early stage</a></li>
-                    <li><a href="">london, uk</a></li>
+                    <li><a href="" class="tag">software, health</a></li>
+                    <li><a href="" class="sector">hardware</a></li>
+                    <li><a href="" class="stage">late stage</a></li>
+                    <li><a href="" class="region">berlin</a></li>
                   </ul>
                 </div>
                  <div class="col-md-2">
@@ -387,15 +388,58 @@
                   <div>
                     <a href="" class="btn btn-primary pull-right">View <i class="fa fa-angle-right right" aria-hidden="true"></i></a>
                     <span class="c-card__detail raising">£10M</span>
+                    <span class="c-card__date date">22/08/2015</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default c-card c-card--wide">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="images/media-image-alt.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading c-card__heading c-card__heading--large title">Red Industries</h4>
+                      <div class="c-card__body">
+                        <p>Red specialises in bringing the latest technological advancements to digital consumers through ecommerce subscription channels.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <ul class="tags pull-left">
+                    <li><a href="" class="tag">health</a></li>
+                    <li><a href="" class="sector">health</a></li>
+                    <li><a href="" class="stage">mid stage</a></li>
+                    <li><a href="" class="region">new york</a></li>
+                  </ul>
+                </div>
+                 <div class="col-md-2">
+                  <div>
+                    <span class="c-card__social">
+                      <i class="fa fa-comment left" aria-hidden="true"></i> 5
+                    </span>
+                    <span class="c-card__social likes">
+                      <i class="fa fa-thumbs-up left" aria-hidden="true"></i> 25
+                    </span>
+                  </div>
+                  <div>
+                    <a href="" class="btn btn-primary pull-right">View <i class="fa fa-angle-right right" aria-hidden="true"></i></a>
+                    <span class="c-card__detail raising">£15M</span>
+                    <span class="c-card__date date">14/08/2015</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
-
       </div>
     </div>
   </div>
@@ -407,93 +451,7 @@
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
   <script src="js/list.fuzzysearch.js"></script>
+  <script src="js/opportunities.js"></script>
 
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-
-      var options = {
-        valueNames: ['title', 'likes', 'raising', 'tags'],
-        plugins: [ ListFuzzySearch() ]
-      };
-
-      var userList = new List('filter-cards', options);
-
-      function sortAZ() {
-        userList.sort('title', { order: "asc" });
-      }
-
-      function sortZA() {
-        userList.sort('title', { order: "desc" });
-      }
-
-      function sortH2l() {
-        userList.sort('raising', { order: "desc" });
-      }
-
-      function sortL2h() {
-        userList.sort('raising', { order: "asc" });
-      }
-
-      function filterByTag(tag) {
-        userList.filter(function(item) {
-          if (item.values().tags.indexOf(tag) !== -1) {
-            return true
-          }
-
-          return false;
-        });
-      }
-
-      function filterHandler(tag) {
-        if ($(this).hasClass('active')) {
-          userList.filter();
-        } else {
-          filterByTag(tag);
-        }
-      }
-
-      function resetSearch() {
-        userList.fuzzySearch.search('');
-      }
-
-      $('#sort-az').click(function(e) {
-        sortAZ();
-      });
-
-      $('#sort-za').click(function(e) {
-        sortZA();
-      });
-
-      $('#sort-h2l').click(function(e) {
-        sortH2l();
-      });
-
-      $('#sort-l2h').click(function(e) {
-        sortL2h();
-      });
-
-      $('#filter-health').click(function(e) {
-        filterHandler('health');
-      });
-
-      $('#filter-software').click(function(e) {
-        filterHandler('software');
-      });
-
-      $('#filter-learning').click(function(e) {
-        filterHandler('learning');
-      });
-
-      $('#filter-education').click(function(e) {
-        filterHandler('education');
-      });
-
-      $('#clear-search').click(function(e) {
-        $('#search-cards').val('');
-        resetSearch();
-      });
-    });
-  </script>
 </body>
 </html>
