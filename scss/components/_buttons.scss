@@ -24,6 +24,10 @@
 .btn-group {
   margin: 20px 0;
 
+  &.btn-group--no-spacing {
+    margin: 0;
+  }
+
   .btn {
     font-size: 16px;
     text-transform: uppercase;
@@ -40,6 +44,12 @@
 .btn-group-container {
   @include upto(tablet) {
     overflow-x: auto;
+  }
+
+  > .btn-group-label {
+    font-family: 'NationalMedium';
+    padding-right: 10px;
+    text-transform: uppercase;
   }
 
   .btn-group {

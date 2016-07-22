@@ -347,6 +347,8 @@ input[type="radio"] .styled:checked + label::after {
     text-transform: uppercase; }
   .p--default .btn-group {
     margin: 20px 0; }
+    .p--default .btn-group.btn-group--no-spacing {
+      margin: 0; }
     .p--default .btn-group .btn {
       font-size: 16px;
       text-transform: uppercase; }
@@ -358,6 +360,10 @@ input[type="radio"] .styled:checked + label::after {
   @media only screen and (max-width: 599px) {
     .p--default .btn-group-container {
       overflow-x: auto; } }
+  .p--default .btn-group-container > .btn-group-label {
+    font-family: 'NationalMedium';
+    padding-right: 10px;
+    text-transform: uppercase; }
   @media only screen and (max-width: 599px) {
     .p--default .btn-group-container .btn-group {
       min-width: 550px; } }
@@ -547,6 +553,7 @@ input[type="radio"] .styled:checked + label::after {
     color: #fff;
     overflow: hidden;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 5px;
     position: relative; }
     @media only screen and (min-width: 1000px) {
@@ -635,6 +642,8 @@ input[type="radio"] .styled:checked + label::after {
       border: 0;
       color: #b5b5b5;
       text-transform: uppercase; }
+  .p--default .list {
+    margin-top: 20px; }
   .p--default .statistic {
     background: #c6e5f4;
     border-radius: 8px;
