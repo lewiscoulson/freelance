@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Airbyte - Marketplace Overview</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/81c3504cd6.css" media="all">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    body {
+      width: 865px;
+      position: relative;
+    }
+
+    .container {
+      max-width: 786px;
+      position: absolute;
+      top: 127px;
+      left: 40px;
+    }
+
+    .options {
+      display: block;
+      width: 153px;
+      height: 70px;
+      position: absolute;
+      top: 56px;
+      right: 53px;
+    }
+
+    .dropdown {
+      display: none;
+      width: 259px;
+      position: absolute;
+      top: 125px;
+      right: 53px;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="" class="options"></a>
+  <div class="dropdown">
+    <img src="images/tablet-dropdown.png" alt="">
+  </div>
+  <img src="images/tablet.png" alt="">
+  <div class="container p--default">
+    <a href="">
+      <img src="images/branding.png" class="c-branding" alt="">
+    </a>
+    <div class="row">
+      <div class="col-md-12" id="filter-cards">
+        <div class="c-filter-box">
+          <div class="c-filter-box__top">
+            <h3 class="c-filter-box__heading pull-left">Filters</h3>
+            <button type="button" class="btn btn-link pull-right" id="clear-search">Clear</button>
+          </div>
+
+          <div class="c-filter-box__desktop-tags">
+             <h3 class="c-filter-box__heading">Tags</h3>
+             <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary" id="filter-health">
+                <input type="checkbox" autocomplete="off" checked> Health
+              </label>
+              <label class="btn btn-primary" id="filter-software">
+                <input type="checkbox" autocomplete="off"> Software
+              </label>
+              <label class="btn btn-primary" id="filter-learning">
+                <input type="checkbox" autocomplete="off"> Learning
+              </label>
+              <label class="btn btn-primary" id="filter-education">
+                <input type="checkbox" autocomplete="off"> Education
+              </label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-search" aria-hidden="true"></i></span>
+            <input type="text" class="form-control fuzzy-search" id="search-cards" placeholder="Search" aria-describedby="sizing-addon3">
+          </div>
+
+          <div class="c-filter-box__desktop-filters">
+            <div class="row">
+              <div class="col-md-4">
+                <h4>Sector</h4>
+                <div class="filters-sector">
+                  <div class="checkbox">
+                    <input type="checkbox" name="software" id="sector-1-d">
+                    <label for="sector-1-d">
+                      Software
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="hardware" id="sector-2-d">
+                    <label for="sector-2-d">
+                      Hardware
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="health" id="sector-3-d">
+                    <label for="sector-3-d">
+                      Health
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4>Stage</h4>
+                <div class="filters-stage">
+                  <div class="checkbox">
+                    <input type="checkbox" name="early stage" id="stage-1-d">
+                    <label for="stage-1-d">
+                      Early stage
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="mid stage" id="stage-2-d">
+                    <label for="stage-2-d">
+                      Mid stage
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="late stage" id="stage-3-d">
+                    <label for="stage-3-d">
+                      Late stage
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4>Region</h4>
+                <div class="filters-region">
+                  <div class="checkbox">
+                    <input type="checkbox" name="london" id="region-1-d">
+                    <label for="region-1-d">
+                      London
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="berlin" id="region-2-d">
+                    <label for="region-2-d">
+                      Berlin
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" name="new york" id="region-3-d">
+                    <label for="region-3-d">
+                      New york
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-filter-box__filters">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Sector <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body filters-sector">
+                    <form role="form">
+                      <div class="checkbox">
+                        <input type="checkbox" name="software" id="sector-1">
+                        <label for="sector-1">
+                          Software
+                        </label>
+                      </div>
+
+                      <div class="checkbox">
+                        <input type="checkbox" name="hardware" id="sector-2">
+                        <label for="sector-2">
+                          Hardware
+                        </label>
+                      </div>
+
+                      <div class="checkbox">
+                        <input type="checkbox" name="health" id="sector-3">
+                        <label for="sector-3">
+                          Health
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Stage <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body filters-stage">
+                    <div class="checkbox">
+                      <input type="checkbox" name="early stage" id="stage-1">
+                      <label for="stage-1">
+                        Early stage
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="mid stage" id="stage-2">
+                      <label for="stage-2">
+                        Mid stage
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="late stage" id="stage-3">
+                      <label for="stage-3">
+                        Late stage
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Region <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body filters-region">
+                    <div class="checkbox">
+                      <input type="checkbox" name="london" id="region-1">
+                      <label for="region-1">
+                        London
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="berlin" id="region-2">
+                      <label for="region-2">
+                        Berlin
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="new york" id="region-3">
+                      <label for="region-3">
+                        New york
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+               <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Tags <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="panel-body filters-tags">
+                    <div class="checkbox">
+                      <input type="checkbox" name="health" id="tags-1">
+                      <label for="tags-1">
+                        Health
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="software" id="tags-2">
+                      <label for="tags-2">
+                        Software
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="learning" id="tags-3">
+                      <label for="tags-3">
+                        Learning
+                      </label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" name="education" id="tags-4">
+                      <label for="tags-4">
+                        Education
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-group-container">
+          <span class="btn-group-label">Sort by: </span>
+          <div class="btn-group btn-group--no-spacing" data-toggle="buttons">
+            <label class="btn btn-default active" id="sort-newest">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked>Newest
+            </label>
+            <label class="btn btn-default" id="sort-oldest">
+              <input type="radio" name="options" id="option2" autocomplete="off">Oldest
+            </label>
+            <label class="btn btn-default" id="sort-az">
+              <input type="radio" name="options" id="option3" autocomplete="off">A-Z
+            </label>
+            <label class="btn btn-default" id="sort-za">
+              <input type="radio" name="options" id="option4" autocomplete="off">Z-A
+            </label>
+            <label class="btn btn-default" id="sort-h2l">
+              <input type="radio" name="options" id="option5" autocomplete="off">Raising H2L
+            </label>
+            <label class="btn btn-default" id="sort-l2h">
+              <input type="radio" name="options" id="option6" autocomplete="off">Raising L2H
+            </label>
+            <label class="btn btn-default sort" data-sort="likes">
+              <input type="radio" name="options" id="option7" autocomplete="off">Likes
+            </label>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="panel panel-default c-card c-card--wide">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="images/media-image.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading c-card__heading c-card__heading--large title">Lighter Blue Industries</h4>
+                      <div class="c-card__body">
+                        <p>Deep Blue specialises in bringing the latest technological advancements to digital consumers through ecommerce subscription channels.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <ul class="tags pull-left">
+                    <li><a href="" class="tag">education, learning</a></li>
+                    <li><a href="" class="sector">software</a></li>
+                    <li><a href="" class="stage">early stage</a></li>
+                    <li><a href="" class="region">london</a></li>
+                  </ul>
+                </div>
+                 <div class="col-md-2">
+                  <div>
+                    <span class="c-card__social">
+                      <i class="fa fa-comment left" aria-hidden="true"></i> 4
+                    </span>
+                    <span class="c-card__social likes">
+                      <i class="fa fa-thumbs-up left" aria-hidden="true"></i> 1
+                    </span>
+                  </div>
+                  <div>
+                    <a href="" class="btn btn-primary pull-right">View <i class="fa fa-angle-right right" aria-hidden="true"></i></a>
+                    <span class="c-card__detail raising">£20M</span>
+                    <span class="c-card__date date">22/07/2016</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default c-card c-card--wide">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="images/media-image.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading c-card__heading c-card__heading--large title">Blue Industries</h4>
+                      <div class="c-card__body">
+                        <p>Blue specialises in bringing the latest technological advancements to digital consumers through ecommerce subscription channels.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <ul class="tags pull-left">
+                    <li><a href="" class="tag">software, health</a></li>
+                    <li><a href="" class="sector">hardware</a></li>
+                    <li><a href="" class="stage">late stage</a></li>
+                    <li><a href="" class="region">berlin</a></li>
+                  </ul>
+                </div>
+                 <div class="col-md-2">
+                  <div>
+                    <span class="c-card__social">
+                      <i class="fa fa-comment left" aria-hidden="true"></i> 4
+                    </span>
+                    <span class="c-card__social likes">
+                      <i class="fa fa-thumbs-up left" aria-hidden="true"></i> 15
+                    </span>
+                  </div>
+                  <div>
+                    <a href="" class="btn btn-primary pull-right">View <i class="fa fa-angle-right right" aria-hidden="true"></i></a>
+                    <span class="c-card__detail raising">£10M</span>
+                    <span class="c-card__date date">22/08/2015</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default c-card c-card--wide">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="images/media-image-alt.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading c-card__heading c-card__heading--large title">Red Industries</h4>
+                      <div class="c-card__body">
+                        <p>Red specialises in bringing the latest technological advancements to digital consumers through ecommerce subscription channels.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <ul class="tags pull-left">
+                    <li><a href="" class="tag">health</a></li>
+                    <li><a href="" class="sector">health</a></li>
+                    <li><a href="" class="stage">mid stage</a></li>
+                    <li><a href="" class="region">new york</a></li>
+                  </ul>
+                </div>
+                 <div class="col-md-2">
+                  <div>
+                    <span class="c-card__social">
+                      <i class="fa fa-comment left" aria-hidden="true"></i> 5
+                    </span>
+                    <span class="c-card__social likes">
+                      <i class="fa fa-thumbs-up left" aria-hidden="true"></i> 25
+                    </span>
+                  </div>
+                  <div>
+                    <a href="" class="btn btn-primary pull-right">View <i class="fa fa-angle-right right" aria-hidden="true"></i></a>
+                    <span class="c-card__detail raising">£15M</span>
+                    <span class="c-card__date date">14/08/2015</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script src="js/list.min.js"></script>
+  <script src="js/list.fuzzysearch.js"></script>
+  <script src="js/opportunities.js"></script>
+
+  <script>
+    $(function () {
+      $('.options').click(function(e) {
+        e.preventDefault();
+
+         $('.dropdown').toggle();
+      });
+    });
+  </script>
+
+</body>
+</html>
