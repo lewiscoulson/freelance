@@ -58,3 +58,15 @@
     }
   }
 }
+
+.btn-settings {
+  padding: 10px 0;
+  text-align: right;
+
+  .btn {
+    font-family: 'NationalMedium';
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
